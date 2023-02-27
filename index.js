@@ -58,8 +58,40 @@ console.log(Musa);
 
 // Question 4:
 // What are the different ways you can clone an object? Give examples for each of them.
-// Object.assign
+//  Using Object.assign
+const myDetails={
+  name: 'Olaide-Busayo',
+  age: 24,
+  location :'Abuja'
+
+}
+console.log(myDetails);
+
+const details2 = Object.assign({}, myDetails);
+details2.name='Egbekunle-Blessing';
+console.log(details2);
+
 // spread method
+const student ={
+name:'Olugbenga-Shade',
+school:'Oau',
+department:'computer-science'
+}
+
+console.log(student);
+const student2={... student}
+student2.name='Olubimpe-Ayo'
+console.log(student2)
+
+// using JSON.parse(JSON.stingify())
+const student3={
+ name:'nathaniel-Isreal',
+school:'Oau',
+department:'computer-science' 
+}
+const student4=JSON.parse(JSON.stringify(student3));
+student4.name= 'Thelma-Owolabi'
+console.log(student4);
 
 // Question 5:
 
